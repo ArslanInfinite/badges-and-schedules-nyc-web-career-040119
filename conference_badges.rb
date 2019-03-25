@@ -16,15 +16,6 @@ def batch_badge_creator(attendees)
   return new_attendees_array
 end
 
-describe '#batch_badge_creator' do
-  it 'should return a list of badge messages' do
-    expect(batch_badge_creator(attendees)).to eq(badges)
-  end
-  it 'should not hard-code response' do
-    expect(batch_badge_creator(["Johnny"])).to eq(["Hello, my name is Johnny."])
-  end
-end
-
 def assign_rooms(room_assignments)
   new_room_array = []
 attendees.each do |room|
