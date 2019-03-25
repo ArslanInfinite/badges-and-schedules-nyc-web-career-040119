@@ -12,9 +12,9 @@ end
 
 
 def batch_badge_creator(attendees)
-  ada_lovelace = []
+  new_attendees_array = []
   attendees.each do |attendee|
-     ada_lovelace << badge_maker(attendee)
+     new_attendees_array << badge_maker(attendee)
   end
-  return ada_lovelace
+  return new_attendees_array
 end
