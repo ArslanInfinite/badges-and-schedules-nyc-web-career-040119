@@ -31,7 +31,7 @@ def assign_rooms(attendees)
   new_room_array = []
 attendees.each do |attendee|
   new_room_array << badge_maker(attendee)
-  end 
+  end
   return new_room_array
 end
 
