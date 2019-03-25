@@ -25,10 +25,10 @@ describe '#batch_badge_creator' do
   end
 end
 
-def assign_rooms(attendees)
+def assign_rooms(room_assignments)
   new_room_array = []
-attendees.each do |attendee|
-  new_room_array << badge_maker(attendee)
+attendees.each do |room|
+  new_room_array << badge_maker(room)
   end
   return new_room_array
 end
