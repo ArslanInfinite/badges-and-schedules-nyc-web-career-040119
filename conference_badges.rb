@@ -1,5 +1,3 @@
-require 'pry'
-
 def badge_maker(name)
   "Hello, my name is #{name}."
 end
@@ -26,9 +24,8 @@ end
 # end
 
 def assign_rooms(attendees_for_room)
-binding.pry
   new_room_array = []
-  attendees_for_room.each_with_index do |individual_name,index|
+  attendees_for_room.each_with_index do |individual_name,index| 
 #     a = [11,22,31,224,44].with_index { |val,index| puts "index: #{index} for #{val}" if val < 30}
 # =>NoMethodError: undefined method `with_index' for [11, 22, 31, 224, 44]:Array
 #        from (irb):2
