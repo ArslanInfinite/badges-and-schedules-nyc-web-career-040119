@@ -23,6 +23,10 @@ def printer(attendees)
   array_of_strings.each do |greeting_string|
     puts greeting_string
   end
+  second_array_of_strings = assign_rooms(attendees)
+  second_array_of_strings.each do |room_number|
+    puts room_number
+  end
 end
 
 #   # Question 4
