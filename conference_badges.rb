@@ -17,15 +17,3 @@ def assign_rooms(attendees_for_room)
     end
   return new_room_array
 end
-
-
-
-
-
-
-
-
-
-
-
-
