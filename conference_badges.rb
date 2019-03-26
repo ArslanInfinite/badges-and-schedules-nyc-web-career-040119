@@ -10,26 +10,9 @@ def batch_badge_creator(attendees)
   return new_attendees_array
 end
 
-# describe '#assign_rooms' do
-#
-#   # Question 3
-#
-#   it 'should return a list of welcome messages and room assignments' do
-#     expect(assign_rooms(attendees)).to eq(room_assignments)
-#   end
-#   it 'should not hard-code the response' do
-#     expect(assign_rooms(["Steve"])).to eq(["Hello, Steve! You'll be assigned to room 1!"])
-#   end
-#
-# end
-
 def assign_rooms(attendees_for_room)
   new_room_array = []
   attendees_for_room.each_with_index do |individual_name,index|
-#     a = [11,22,31,224,44].with_index { |val,index| puts "index: #{index} for #{val}" if val < 30}
-# =>NoMethodError: undefined method `with_index' for [11, 22, 31, 224, 44]:Array
-#        from (irb):2
-#        from C:/Ruby193/bin/irb:12:in `<main>'
     new_room_array << "Hello, #{individual_name}! You'll be assigned to room #{index + 1}!"
     end
   return new_room_array
