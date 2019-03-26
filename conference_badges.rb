@@ -25,11 +25,11 @@ end
 #
 # end
 
-def assign_rooms(room_assignments)
+def assign_rooms(attendees_for_room)
 binding.pry
   new_room_array = []
-  room_assignments.each do |room|
-    new_room_array << room_assignments(room)
+  attendees_for_room.each do |individual_name|
+    new_room_array << attendees_for_room(individual_name)
   end
   return new_room_array
 end
